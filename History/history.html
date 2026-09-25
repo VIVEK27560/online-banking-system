@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="history.css">
+</head>
+
+<body>
+
+    <div class="page">
+
+        <h1>Transaction History</h1>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Transaction ID</th>
+                        <th>Date</th>
+                        <th>Transaction Type</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>TXN1001</td>
+                        <td>24-09-2026</td>
+                        <td>Bill Payment</td>
+                        <td>Electricity Bill</td>
+                        <td>₹1,250</td>
+                        <td class="success">Successful</td>
+                    </tr>
+
+                    <tr>
+                        <td>TXN1002</td>
+                        <td>23-09-2026</td>
+                        <td>Bill Payment</td>
+                        <td>Phone Bill</td>
+                        <td>₹599</td>
+                        <td class="success">Successful</td>
+                    </tr>
+
+                    <tr>
+                        <td>TXN1003</td>
+                        <td>22-09-2026</td>
+                        <td>Bill Payment</td>
+                        <td>Internet Bill</td>
+                        <td>₹799</td>
+                        <td class="success">Successful</td>
+                    </tr>
+
+                    <tr>
+                        <td>TXN1004</td>
+                        <td>20-09-2026</td>
+                        <td>Loan Payment</td>
+                        <td>Monthly Loan EMI</td>
+                        <td>₹5,000</td>
+                        <td class="success">Successful</td>
+                    </tr>
+
+                    <tr>
+                        <td>TXN1005</td>
+                        <td>18-09-2026</td>
+                        <td>Bill Payment</td>
+                        <td>DTH Recharge</td>
+                        <td>₹399</td>
+                        <td class="failed">Failed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button onclick="goBack()">Back</button>
+
+    </div>
+
+    <script src="../js/history.js"></script>
+
+</body>
+</html>

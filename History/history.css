@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    background-color: #e0eaf8;
+    font-family: Arial, sans-serif;
+    padding: 30px 0;
+}
+
+.page {
+    width: 90%;
+    min-height: 85vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #0B1F3A;
+    color: gold;
+    text-align: center;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #0B1F3A;
+    color: white;
+    padding: 15px;
+    border: 1px solid #0B1F3A;
+}
+
+td {
+    padding: 14px;
+    border: 1px solid #b8c7d9;
+    color: #0B1F3A;
+}
+
+tr:nth-child(even) {
+    background-color: #F4F7FB;
+}
+
+tr:hover {
+    background-color: #e0eaf8;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.failed {
+    color: red;
+    font-weight: bold;
+}
+
+button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0B1F3A;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163d70;
+}

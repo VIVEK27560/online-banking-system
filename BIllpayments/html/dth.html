@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTH Bill Payment</title>
+
+    <link rel="stylesheet" href="../css/dth.css">
+</head>
+
+<body>
+
+<center>
+
+    <h2>DTH Bill</h2>
+
+    <form>
+
+        <label for="consumerId">Connection Id:</label>
+        <br>
+
+        <input type="text" id="consumerId" name="consumerId">
+
+        <br><br>
+
+        <label for="customerName">Network Provider Name:</label>
+        <br>
+
+        <input type="text" id="customerName" name="customerName">
+
+        <br><br>
+
+        <label for="amount">Amount:</label>
+        <br>
+
+        <input type="number" id="amount" name="amount" min="1">
+
+        <br><br>
+
+        <a href="pay.html" class="pay" id="payButton">
+            Pay
+        </a>
+
+        <button type="button" onclick="history.back()">
+            Back
+        </button>
+
+    </form>
+
+</center>
+
+<script src="../js/dth.js"></script>
+
+</body>
+</html>

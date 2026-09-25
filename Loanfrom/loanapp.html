@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loan Application</title>
+
+    <link rel="stylesheet" href="loanapp.css">
+</head>
+
+<body>
+
+    <div class="loan-container">
+
+        <h1>Loan Application Form</h1>
+        <p class="subtitle">Apply for a loan by filling in the details below</p>
+
+        <button type="button" class="back-btn" onclick="goBack()">← Back</button>
+        
+        <form id="loanForm">
+
+            <h2>Personal Details</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter 10-digit phone number">
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob">
+
+            <h2>Loan Details</h2>
+
+            <label for="loanType">Loan Type</label>
+            <select id="loanType">
+                <option value="">Select Loan Type</option>
+                <option value="Personal Loan">Personal Loan</option>
+                <option value="Home Loan">Home Loan</option>
+                <option value="Education Loan">Education Loan</option>
+                <option value="Vehicle Loan">Vehicle Loan</option>
+                <option value="Business Loan">Business Loan</option>
+            </select>
+
+            <label for="amount">Loan Amount</label>
+            <input type="number" id="amount" placeholder="Enter loan amount">
+
+            <label for="tenure">Loan Tenure</label>
+            <select id="tenure">
+                <option value="">Select Tenure</option>
+                <option value="1 Year">1 Year</option>
+                <option value="2 Years">2 Years</option>
+                <option value="3 Years">3 Years</option>
+                <option value="5 Years">5 Years</option>
+                <option value="10 Years">10 Years</option>
+            </select>
+
+            <h2>Employment Details</h2>
+
+            <label for="employment">Employment Type</label>
+            <select id="employment">
+                <option value="">Select Employment Type</option>
+                <option value="Salaried">Salaried</option>
+                <option value="Self Employed">Self Employed</option>
+                <option value="Business">Business</option>
+                <option value="Student">Student</option>
+            </select>
+
+            <label for="income">Monthly Income</label>
+            <input type="number" id="income" placeholder="Enter monthly income">
+
+            <label for="address">Address</label>
+            <textarea id="address" placeholder="Enter your address"></textarea>
+
+            <div class="buttons">
+                <button type="submit">Submit Application</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+        </form>
+
+        <div id="successMessage" class="success">
+            <h2>✓ Application Submitted</h2>
+            <p>Your loan application has been submitted successfully.</p>
+            <p>Application ID: <strong id="applicationId"></strong></p>
+
+            <button onclick="newApplication()">New Application</button>
+        </div>
+
+    </div>
+
+    <script src="loanapp.js"></script>
+
+</body>
+</html>
