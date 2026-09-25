@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e0eaf8;
+}
+
+.App {
+    min-height: 100vh;
+    padding: 1px;
+}
+
+.navbar {
+    width: 90%;
+    min-height: 85vh;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.heading {
+    background-color: #0B1F3A;
+    color: gold;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 22px;
+    color: #0B1F3A;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.options button {
+    height: 300px;
+    border: 2px solid #0B1F3A;
+    border-radius: 12px;
+    background-color: #F4F7FB;
+    color: #0B1F3A;
+    cursor: pointer;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.options button:hover {
+    background-color: #d8f3dc;
+    transform: translateY(-5px);
+}
+
+.options span {
+    font-size: 55px;
+}
+
+.options h2 {
+    margin: 20px 0 10px;
+    font-size: 24px;
+}
+
+.options p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.logout {
+    display: block;
+    margin: 35px auto 0;
+    padding: 12px 35px;
+    background-color: #0B1F3A;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: #163b68;
+}
+
+@media (max-width: 800px) {
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .options button {
+        height: 250px;
+    }
+}
