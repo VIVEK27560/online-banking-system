@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: hsl(41, 76%, 82%);
+}
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+h1 {
+    text-align: center;
+    color:  #172ea1;
+    margin-bottom: 30px;
+}
+.accounts {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.account-card {
+    background: rgb(251, 251, 252);
+    width: 350px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.account-card h2 {
+    color: #1d4b91;
+    margin-bottom: 15px;
+}
+.account-card p {
+    margin: 10px 0;
+}
+.account-card h3 {
+    margin: 20px 0;
+}
+.active {
+    background: #d4edda;
+    color: green;
+    padding: 7px 15px;
+    border-radius: 20px;
+}
+
+.overview {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+.overview h2 {
+    color: #173b72;
+    margin-bottom: 20px;
+}
+.overview-box {
+    display: flex;
+    gap: 20px;
+}
+.overview-box div {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: #f1f5fb;
+    border-radius: 8px;
+}
+.overview-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #173b72;
+    margin-top: 10px;
+}
+@media(max-width:700px) {
+    .overview-box {
+        flex-direction: column;
+    }
+}

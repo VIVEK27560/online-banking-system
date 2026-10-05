@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Transfer</title>
+    <link rel="stylesheet" href="Fundtransfer.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Fund Transfer</h1>
+
+    <form id="transferForm">
+
+        <label>From Account</label>
+
+        <select id="fromAccount" required>
+            <option value="">Select Account</option>
+            <option value="Savings Account">
+                Savings Account
+            </option>
+            <option value="Current Account">
+                Current Account
+            </option>
+        </select>
+
+
+        <label>Beneficiary Account Number</label>
+
+        <input
+            type="text"
+            id="beneficiary"
+            placeholder="Enter account number"
+            required
+        >
+
+
+        <label>Transfer Amount</label>
+
+        <input
+            type="number"
+            id="amount"
+            placeholder="Enter amount"
+            min="1"
+            required
+        >
+
+
+        <label>Description</label>
+
+        <input
+            type="text"
+            id="description"
+            placeholder="Enter description"
+            required
+        >
+
+
+        <button type="submit">
+            Transfer Money
+        </button>
+
+    </form>
+
+    <p id="message"></p>
+
+</div>
+
+<script src="Fundtransfer.js"></script>
+
+</body>
+</html>
